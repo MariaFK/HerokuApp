@@ -12,7 +12,7 @@ public class CheckboxesTest extends BaseTest {
     }
 
     @Test
-    public void fistCheckboxIsUncheckedTest() {
+    public void isFistCheckboxUncheckedTest() {
         openLink();
         WebElement firstCheckbox = driver.findElement(By.xpath("//form[@id='checkboxes']//input[1]"));
         boolean firstCheckboxIsSelected = firstCheckbox.isSelected();
@@ -20,7 +20,7 @@ public class CheckboxesTest extends BaseTest {
     }
 
     @Test
-    public void firstCheckboxIsCheckedTest() {
+    public void IsFirstCheckboxCheckedTest() {
         openLink();
         WebElement firstCheckbox = driver.findElement(By.xpath("//form[@id='checkboxes']//input[1]"));
         firstCheckbox.click();
@@ -29,7 +29,7 @@ public class CheckboxesTest extends BaseTest {
     }
 
     @Test
-    public void secondCheckboxIsCheckedTest() {
+    public void IsSecondCheckboxCheckedTest() {
         openLink();
         WebElement secondCheckbox = driver.findElement(By.xpath("//form[@id='checkboxes']//input[2]"));
         boolean secondCheckboxIsSelected = secondCheckbox.isSelected();
@@ -37,7 +37,7 @@ public class CheckboxesTest extends BaseTest {
     }
 
     @Test
-    public void secondCheckboxIsUncheckedTest() {
+    public void IsSecondCheckboxUncheckedTest() {
         openLink();
         WebElement secondCheckbox = driver.findElement(By.xpath("//form[@id='checkboxes']//input[2]"));
         secondCheckbox.click();
