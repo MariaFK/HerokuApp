@@ -7,10 +7,10 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
-public class Typos extends BaseTest {
+public class TyposTest extends BaseTest {
 
     @Test
-    public void spellCheck() {
+    public void spellCheckTest() {
         driver.get(Urls.TYPOS_URL);
         WebElement typoRow = driver.findElement(By.xpath("//div//p[2]"));
         String actualText = typoRow.getText();

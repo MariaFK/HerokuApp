@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Checkboxes extends BaseTest {
+public class CheckboxesTest extends BaseTest {
     public void openLink() {
         driver.get(Urls.CHECKBOX_URL);
     }
@@ -20,7 +20,7 @@ public class Checkboxes extends BaseTest {
     }
 
     @Test
-    public void FirstCheckboxIsCheckedTest() {
+    public void firstCheckboxIsCheckedTest() {
         openLink();
         WebElement firstCheckbox = driver.findElement(By.xpath("//form[@id='checkboxes']//input[1]"));
         firstCheckbox.click();
