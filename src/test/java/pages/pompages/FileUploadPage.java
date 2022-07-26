@@ -19,7 +19,7 @@ public class FileUploadPage extends BasePage {
     }
 
     public void chooseFile() {
-        driver.findElement(CHOOSE_FILE_BUTTON).sendKeys("src/test/resources/heart.jfif");
+        driver.findElement(CHOOSE_FILE_BUTTON).sendKeys("D://java//HerokuApp//src//test//resources//helloMessage");
     }
 
     public void uploadFile() {
@@ -31,7 +31,7 @@ public class FileUploadPage extends BasePage {
     }
 
     public String expectedName() {
-        return "heart.jfif";
+        return "helloMessage";
     }
 
 
